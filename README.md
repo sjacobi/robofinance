@@ -22,7 +22,7 @@
 1) в консоли создать папку и зайти в нее
 2) выполнить команду: 
 ```
-git clone git@github.com:sjacobi/robofinance.git
+git clone https://github.com/sjacobi/robofinance.git
 ```
 3) выполнить команду: 
 ```
