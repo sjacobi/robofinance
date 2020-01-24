@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ../docker
+source .env
+docker login -u $DOCKER_REGISTRY_USERNAME -p $DOCKER_REGISTRY_PASSWORD registry.gitlab.com
+docker-compose up -d

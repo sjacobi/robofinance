@@ -1,0 +1,10 @@
+#!/bin/bash
+cd ../docker
+source .env
+docker login -u $DOCKER_REGISTRY_USERNAME -p $DOCKER_REGISTRY_PASSWORD registry.gitlab.com
+docker-compose up -d
+docker exec -it test-php-container /usr/local/bin/composer install
+docker exec -it test-php-container php artisan key:generate
+docker exec -it test-php-container php artisan migrate:fresh
+docker exec -it test-php-container php artisan db:seed
+python -m webbrowser http://127.0.0.1:50/
