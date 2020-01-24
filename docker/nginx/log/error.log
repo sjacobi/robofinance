@@ -1,0 +1,30 @@
+2019/10/29 16:20:32 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:20:35 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:20:39 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:20:44 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:20:47 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:20:51 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:20:55 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:21:03 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:21:17 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:21:44 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:22:36 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:17 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:19 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:22 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:24 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:26 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:29 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:33 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:41 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:23:54 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:24:21 [crit] 1#1: pread() "/etc/nginx/conf.d/nginx.conf" failed (21: Is a directory)
+2019/10/29 16:33:55 [error] 6#6: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.21.0.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.21.0.3:9000", host: "127.0.0.1:50"
+2019/10/29 16:39:08 [error] 6#6: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.22.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"
+2019/10/29 19:05:12 [error] 6#6: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.23.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"
+2019/10/29 19:14:07 [error] 6#6: *4 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"
+2019/10/29 19:14:07 [error] 6#6: *4 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"
+2019/10/29 19:14:08 [error] 6#6: *4 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.24.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"
+2019/10/29 19:31:39 [error] 7#7: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.25.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"
+2019/10/29 19:31:39 [error] 7#7: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.25.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"
+2019/10/29 19:31:40 [error] 7#7: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.25.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:50", referrer: "http://localhost:50/"

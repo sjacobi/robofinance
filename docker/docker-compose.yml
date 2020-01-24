@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+
+  nginx:
+    image: nginx:1.17.7
+    restart: always
+    ports:
+      - "127.0.0.1:50:80"
+    volumes:
+      - ./../source/laravel:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/log/:/var/log/nginx
+    depends_on:
+      - php
+
+  php:
+    image: registry.gitlab.com/sergeyjacobi/docker-basic-images/php/7.3-fpm:1.23
+    restart: always
+    volumes:
+      - ./../source/laravel:/var/www/html
+    container_name: test-php-container
+    depends_on:
+      - mariadb
+      - redis
+
+  horizon:
+    image: registry.gitlab.com/sergeyjacobi/docker-basic-images/php/7.3-fpm:1.23
+    restart: always
+    volumes:
+      - ./../source/laravel:/var/www/html
+    container_name: test-horizon
+    command: php artisan horizon
+    depends_on:
+      - mariadb
+      - redis
+
+  mariadb:
+    image: mariadb:10.1
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: hgntbfu
+      MYSQL_ROOT_PASSWORD: hfyroncg
+    volumes:
+      - ./../data/mysql:/var/lib/mysql
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.9.4
+    restart: always
+    links:
+      - mariadb
+    ports:
+      - "127.0.0.1:51:80"
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+    depends_on:
+      - mariadb
+
+  redis:
+    container_name: test-redis
+    image: redis:5.0.7
+    volumes:
+      - ./../data/redis:/data

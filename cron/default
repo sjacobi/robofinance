@@ -1,0 +1,1 @@
+* * * * * /usr/local/bin/docker exec test-php-container php /var/www/html/artisan schedule:run >> ~/cron2.log 2>&1
