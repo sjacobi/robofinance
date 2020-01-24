@@ -27,6 +27,8 @@
 проект должен запуститься
 
 1) добавить задачу в cron: crontab -e
-* * * * * /usr/local/bin/docker exec test-php-container php /var/www/html/artisan schedule:run >> ~/cron2.log 2>&1
+```
+* * * * * /usr/local/bin/docker exec test-php-container php /var/www/html/artisan schedule:run
+```
 
 готово
