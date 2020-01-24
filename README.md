@@ -26,7 +26,7 @@ git clone https://github.com/sjacobi/robofinance.git
 ```
 3) выполнить команду: 
 ```
-cd bash/
+cd robofinance/bash/
 ```
 4) выполнить команду: 
 ```
